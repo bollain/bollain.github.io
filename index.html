@@ -116,7 +116,7 @@
 					<div class="row quotes">
 						  <div class="col-lg-8 col-lg-offset-2 text-left">
 									<p >
-										I am now in my second and final year of the Bachelor of Computer Science at the University of British Columbia, where I have found my true calling as a computer scientist. I love programming and problem solving; there is nothing more satisfying than turning an idea into a finished product. 
+										I am now in my final year of the Bachelor of Computer Science at the University of British Columbia, where I have found my true calling as a computer scientist. I love programming and problem solving; there is nothing more satisfying than turning an idea into a finished product. 
 									</p>
 						  </div>
 					</div>
@@ -189,24 +189,35 @@
 	            </div>
 
 
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form action="https://getsimpleform.com/messages?form_api_token=df948a2e7600198ccc716cb4491c5993" method="post">
-                    	<input type='hidden' name='redirect_to' value='http://www.armandodb.com#contact'/>
-                    	<div class="form-group">
-                    		<label for="InputEmail">Email</label>
-					        <div class="input-group">
-					          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-					          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-					     </div>
-                    	<input onclick="submitFunction()" type='submit' value='Test form' />
-      
-                    </form>
-                </div>
-            </div>
+	            <div class="row">
+	                <div class="col-lg-10 col-lg-offset-2">
+	                    <form action="https://getsimpleform.com/messages?form_api_token=df948a2e7600198ccc716cb4491c5993" method="post">
+	                    	<input type='hidden' name='redirect_to' value='http://www.armandodb.com#contact'/>
+	                    	<div class="col-lg-10">
+		                    	<div class="form-group">
+		                    		<label for="InputEmail">Your Email</label>
+							        <div class="input-group">
+							          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+							     </div>
+							     <div class="form-group">
+							     	<label for="InputName">Your Name</label>
+							     	<div class="input-group">
+							     		<input type="text" class="form-control" id="InputName" name="InputName" placeholder="Enter Name" required>
+							     		<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+							     </div>
+							     <div class="form-group">
+							     	<label for="InputMessage">Your Message</label>
+							     	<div class="input-group">
+							     		<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							     		<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+							     </div>
+		                    	<input type='submit' value='Submit' class="btn btn-default" />
+		                    </div>
+	      
+	                    </form>
+	                </div>
+	            </div>
         </div>
     </section>
 
