@@ -9,6 +9,15 @@ h1{
   padding: 0;
 }
 
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: ##2c3e50;
+}
+
 .avatar {
 	border-radius: 12px;
 	display: block;
@@ -111,7 +120,7 @@ header .intro-text .skills {
   	font-weight: normal;
 }
 
-#quotes, a {
+a.quotes {
 	color: #fff;
 }
 
@@ -260,4 +269,13 @@ header .intro-text .skills {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+hr.project-modal {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: left;
 }
