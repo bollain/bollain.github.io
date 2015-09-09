@@ -137,7 +137,8 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-lg-12 text-center">
-	                    <h1>Projects Section</h1>
+	                    <h1>Projects</h1>
+	                    <hr class="project-modal">
 	                </div>
 	            </div>
 	            <div class="row">
@@ -158,9 +159,20 @@
 	                                <i class="fa fa-search-plus fa-3x"></i>
 	                            </div>
 	                        </div>
-	                        <img src="img/meetup.png" class="img-responsive" alt="">
+	                        <img src="img/meetup_tile.png" class="img-responsive" alt="">
 	                    </a>
                 	</div>
+	                <div class="col-sm-4 portfolio-item">
+	                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+	                        <div class="caption">
+	                            <div class="caption-content">
+	                                <i class="fa fa-search-plus fa-3x"></i>
+	                            </div>
+	                        </div>
+	                        <img src="img/beer.png" class="img-responsive" alt="">
+	                    </a>
+	                </div>
+               	
 	            </div>
 	        </div>
 
@@ -172,8 +184,11 @@
 	            <div class="row">
 	                <div class="col-lg-12">
 	                    <h1>Contact</h1>
+	                    <hr class="project-modal">
 	                </div>
 	            </div>
+	            
+
 	        </div>
 	    </section>
 
@@ -238,10 +253,42 @@
                         <div class="modal-body">
                             <h2>MeetUp</h2>
                             <hr class="project-modal">
-                            <img src="img/meetup.png" height="400" align="left">
-                            <img src="img/meetup.png" height="400" hspace="38" align="middle">
-
-                            <p>Some stuff</p>
+                            	<div class="row">
+                            		<div class="col-md-5">
+                            			<img src="img/meetup.png" height="400">
+                            		</div>
+                            		<div class="col-md-5 col-md-offset-2">
+                            			<img src="img/meetup1.png" height="400">
+                            		</div>
+	                            	<div>
+			                            <p>An app for Android that allows students to map the most efficient routes for their
+			                            	classes, and gives them the option to determine the the optimal place to meet, based
+			                            	on their schedules and distance from each other. The app uses the FourSquare API to find places to meet within the given MeetUp radius. Developed using Android Studio.</p>
+			                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                        		</div>
+                        		</div>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+    </div>
+	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>BeerApp</h2>
+                            <hr class="project-modal">
+                            <img src="img/beer2.png" class="img-responsive img-centered" alt="">
+                            <p>BeerApp is a simple java program that suggests food pairings for your favorite beer. The user types in their favorite beer, and the app queries several databases to suggest food pairings and recipes for the perfect meal. Developed as part of a Hackathon put together by the BCS Club at UBC. The code can be found <a href="https://github.com/bollain/beerapp" target="_blank">here</a></p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -253,8 +300,10 @@
 
 
 
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Scrolling Nav JavaScript -->
@@ -263,5 +312,6 @@
     <!-- Plugin JS -->
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
-  </body>
+</body>
+
 </html>

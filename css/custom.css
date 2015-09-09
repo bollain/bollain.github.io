@@ -279,3 +279,8 @@ hr.project-modal {
     border-top: solid 5px;
     text-align: left;
 }
+
+.meetup-item {
+    right: 0;
+    margin: 0 0 15px;
+}
