@@ -187,10 +187,28 @@
 	                    <hr class="project-modal">
 	                </div>
 	            </div>
-	            
 
-	        </div>
-	    </section>
+
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <form action="https://getsimpleform.com/messages?form_api_token=df948a2e7600198ccc716cb4491c5993" method="post">
+                    	<input type='hidden' name='redirect_to' value='http://www.armandodb.com#contact'/>
+                    	<div class="form-group">
+                    		<label for="InputEmail">Email</label>
+					        <div class="input-group">
+					          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+					          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+					     </div>
+                    	<input onclick="submitFunction()" type='submit' value='Test form' />
+      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<footer class="text-center">
         <div class="footer-below">
@@ -299,7 +317,11 @@
 
 
 
-
+<script>
+function submitFunction() {
+    alert("Thanks! I'll be in touch");
+    }
+</script>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
